@@ -1,0 +1,8 @@
+sylius_paypal_webhook:
+    resource: "@SyliusPayPalPlugin/Resources/config/webhook_routing.yaml"
+
+app_shop_custom_action:
+    path: /custom
+    methods: [GET]
+    defaults:
+        _controller: sylius.controller.shop.homepage::customAction
